@@ -1,0 +1,15 @@
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+
+void updateValues(int *a, int *b){
+   *a=*a+*b;
+    *b=abs(*b-*a);
+}
+
+int main(){
+   int a=4, b=5;
+    updateValues(&a, &b);
+    cout<<a<<" "<<b;
+}
