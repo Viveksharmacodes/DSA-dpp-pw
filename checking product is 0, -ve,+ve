@@ -1,0 +1,18 @@
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+int main(){
+int n1, n2;
+    cin>>n1>>n2;
+    if(n1==0 || n2==0){
+        cout<<"Product will be 0"<<" ";
+    }
+ else if((n1>0 && n2>0) || (n1<0 && n2<0)){
+      cout<<"Product will be positive"<<" ";
+  }
+    else{
+        cout<<"Product will be negative";
+    }
+    return 0;
+}
