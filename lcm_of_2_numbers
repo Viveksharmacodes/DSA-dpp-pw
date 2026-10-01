@@ -1,0 +1,20 @@
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+int lcm(int a, int b){            
+    int i=max(a,b);
+    while(1){
+        if(i%a==0 && i%b==0){
+            return i;
+            break;
+        }
+        i++;
+    }
+}
+  int main(){
+
+cout<<lcm(3,5);
+    
+    return 0;
+}
