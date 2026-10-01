@@ -1,0 +1,18 @@
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+int gcd_hcf(int a, int b){            
+    for(int i=min(a,b); i>=1; i--){
+        if(a%i==0 && b%i==0){
+            return i;
+        }
+    }
+    return 1;
+}
+  int main(){
+
+    cout<<gcd_hcf(12,24);
+    
+    return 0;
+}
